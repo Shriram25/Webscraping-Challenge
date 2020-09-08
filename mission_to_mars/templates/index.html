@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Scraping Homework</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <div class = "container-fluid"> 
+        <div class = "row">
+            <div class="col-md-12 col-sm-12">
+                <div class="jumbotron text-center"> 
+                    <h4 class="card-title">Mission to Mars </h4>
+                    <a href ="scrape.py" class="btn btn-primary"> Scrape Mars! </a>
+                </div> 
+            </div> 
+        </div>  
+    </div>
+
+    <div class = "container-fluid">
+        <div class = "row">
+            <div class="box">
+                <h5 class = "lead">Latest Mars News!</h5>
+                <p class = "lead"> {{scrape.news_title}}</p>
+                <p class = "lead"> {{scrape.news_p}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container-fluid">
+        <div class = "row">
+            <div class="col-md-8">
+                <h5 class = "lead"> Featured Mars Image</h5>
+                <img src = "..." alt="insert featured mars image here">
+            </div>
+            <div class = "col-md-4">
+                <h6> Mars Facts </h6>
+                <p class="lead"> {{scrape.html_table}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class = "container fluid">
+        <div class = "row">
+            <div class="card" style="width: 500rem">
+                <div class="card-body justify content-center">
+                    <h2 class="title">Mars Hemispheres</h2>
+                    <hr>
+                </div>
+                <div class="box">
+                    <img src="..." alt="Cerberus Hemisphere Enhanced" height="160" width="160">
+                    <img src="..." alt="Valles Marineries Hemisphere Enhanced" height="160" width="160">
+                    <img src="..." alt="Schiaparelli Hemisphere Enhanced" height="160" width="160">
+                    <img src="..." alt="Syrtis Major Hemisphere Enhanced" height="160" width="160">
+                 </div>
+                
+        </div>
+    </div>
+    
+</body>
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</html>
